@@ -1,165 +1,203 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Какряцкий Александр - Java разработчик</title>
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.8;
-            background-color: #f7f9fc;
-            color: #333;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Резюме - Какряцкий Александр</title>
+		<style>
+			/* Reset and Body Styles */
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				padding: 20px;
+			}
 
-        h1 {
-            color: #2c3e50;
-            font-size: 3em;
-            text-align: center;
-            margin-bottom: 10px;
-        }
+			/* Container Styles */
+			.container {
+				width: 21cm;
+				max-width: 100%; /* Responsive fallback for smaller screens */
+				padding: 30px;
+				background-color: #fff;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+				border: 1px solid #ddd;
+				margin: auto;
+			}
 
-        h2 {
-            color: #34495e;
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+			/* Typography */
+			h1,
+			h2,
+			h3 {
+				color: #333;
+				margin-bottom: 10px;
+			}
+			p,
+			li {
+				line-height: 1.6;
+			}
+			ul {
+				list-style-type: disc;
+				padding-left: 20px;
+				margin-bottom: 20px;
+			}
 
-        p, li {
-            font-size: 1.1em;
-        }
+			/* Header and Footer Styles */
+			.header,
+			.footer {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.footer {
+				margin-top: 30px;
+				font-size: 0.9em;
+				color: #555;
+			}
 
-        a {
-            color: #0073e6;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
+			/* Contact Links Styling */
+			.contact-info a {
+				color: #333;
+				text-decoration: none;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Какряцкий Александр</h1>
+				<p>
+					Москва •
+					<a>qqMaoSadao@yandex.ru</a>
+					• telegram: 
+					<a href="https://t.me/kakryatskii_a_m">@kakryatskii_a_m</a> •
+					<a href="https://github.com/MaoSada0">Github</a> •
+					<a href="https://leetcode.com/u/MaoSadao/">Leetcode</a
+				</p>
+			</div>
 
-        a:hover {
-            color: #005bb5;
-            text-decoration: underline;
-        }
+			<!-- Technical Skills -->
+			<div class="skills">
+				<h2 style="border-bottom: 2px solid #000000; padding-bottom: 5px">
+					Технические навыки
+				</h2>
+				<ul>
+					<li><strong>Языки:</strong> Java, Kotlin, SQL (Postgres)</li>
+					<li>
+						<strong>Фреймворки:</strong> Spring, Hibernate, JUnit, Mockito
+					</li>
+					<li>
+						<strong>Опыт работы с:</strong> Kafka, RabbitMQ, Redis, Spring
+						Security и Keycloak
+					</li>
+					<li>
+						<strong>Инструменты разработчика:</strong> Git, Docker, Docker
+						Compose, Jira
+					</li>
+					<li><strong>Базы данных:</strong> PostgreSQL + Flyway, MongoDB</li>
+					<li><strong>Другие библиотеки:</strong> Lombok, Log4j, Stream API</li>
+					<li>
+						<strong>Другое (технические знания):</strong> Опыт работы в Linux
+						системах, SOLID и другие принципы, сети и протоколы, JWT, Английский – B2
+					</li>
+				</ul>
+			</div>
 
-        .section {
-            background-color: #ffffff;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+			<div class="experience">
+				<h2 style="border-bottom: 2px solid #000000; padding-bottom: 5px">
+					Профессиональный опыт
+				</h2>
+				<p style="font-size: 25px; padding: 0;"><strong>Яндекс</strong></p>
+				<div style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;">
+						<p style="font-size: 18px;"><strong>Java Backend Разработчик</strong></p>
+						<p style="font-size: 16px;">Ноябрь 2024 – Настоящее время</p>
+				</div>
+				<p style="padding-bottom: 2px; font-size: 17px; margin: 0;"> <strong>Стек</strong>: Java 21, Kotlin, Spring, PostgreSQL, MongoDB, Kafka, Redis, JUnit, Mockito</p>
+				<p style="padding-bottom: 2px; font-size: 17px;">Разрабатываю высоконагруженный сервис тарифной сетки подписки Яндекс Плюс</p>
+				<p style="padding-bottom: 2px; font-size: 17px;">Моя сфера деятельности:</p>
+				<ul style="padding-left: 30px;">
+					<li>
+						<strong>Разработка и оптимизация функционала</strong>: реализую новые функции для системы управления тарифами подписки Яндекс Плюс, обеспечивая стабильную работу сервиса при высоких нагрузках
+					</li>
+					<li>
+						<strong>Работа с микросервисной архитектурой</strong>: разрабатываю и поддерживаю микросервисы, взаимодействующие между собой через Kafka, для обеспечения масштабируемости и быстрого отклика системы
+					</li>
+					<li>
+						<strong>Оптимизация производительности и надежности</strong>: занимаюсь оптимизацией запросов к базам данных (PostgreSQL и MongoDB), что позволяет снизить время отклика и повысить производительность
+					</li>
+				</ul>
 
-        .section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
+				<p style="font-size: 25px; padding: 0;"><strong>Стартап проект OISAC</strong></p>
+				<div style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;">
+						<p style="font-size: 18px;"><strong>Java Backend Разработчик</strong></p>
+						<p style="font-size: 16px;">Июль 2024 – Ноябрь 2024</p>
+				</div>
+				<p style="padding-bottom: 2px; font-size: 17px; margin: 0;"> <strong>Стек</strong>: Java, Spring, PostgreSQL + Flyway, MongoDB, Kafka, Redis, JUnit, Mockito</p>
+				<p style="padding-bottom: 2px; font-size: 17px;">Разработал backend систему, способную выдерживать большие нагрузки, для большого сервиса, предоставляющего услуги учителям и репетиторам по помощи в их деятельности</p>
+				<p style="padding-bottom: 2px; font-size: 17px;">Моя сфера деятельности:</p>
+				<ul style="padding-left: 30px;">
+					<li>
+					 	<strong>Спроектировал базу данных</strong>: разрабатал структуру базы данных, включая схемы для хранения информации о пользователях, заданиях, результатах решений и рекомендациях. Использовал PostgreSQL для основных данных и MongoDB для хранения данных, которые требовали большей гибкости
+					</li>
+					<li>
+						<strong>Разработка API</strong>: cпроектировал и реализовал REST API для различных функций сервиса, например таких как создание и отправка домашних заданий, получение решений учеников, оценка результатов и генерация новых заданий на основе рекомендаций ИИ 
+					</li>
+					<li>
+						<strong>Разработка микросервисной архитектуры</strong>: разделил один большой сервис на микросервисы, реализовал общение между ними с помощью REST и Kafka 
+					</li>
+					<li>
+						<strong>Настройка DevOps процессов</strong>: использовал Docker и Docker-compose для контейнеризации сервисов, настраивал автоматизированные миграции базы данных с помощью Flyway 
+					</li>
+				</ul>
 
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
+				<p style="font-size: 25px; padding: 0;"><strong>Фриланс</strong></p>
+				<div style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;">
+						<p style="font-size: 18px;"><strong>Java Backend Разработчик, Java разработчик</strong></p>
+						<p style="font-size: 16px;">Февраль 2024 – Июль 2024</p>
+				</div>
+				<p style="padding-bottom: 2px; font-size: 17px;">Моя работы:</p>
+				<ul style="padding-left: 30px;">
+					<li style="padding-bottom: 5px;">
+						<p><strong>Телеграмм бот</strong>, который позволяет отправить файл и получить сайт, где можно скачать его</p>
+						<p><strong>Стек:</strong> Java, Spring, PostgreSQL + Flyway, RabbitMQ, Redis, JUnit, Mockito</p>
+						Проект построен на микросервисной архитектуре, включающую в себя сервисы диспатчера, нод, регистрации, хэширования и сохранения файлов в бд. Микросервисы включают в себя oauth2 аутентификацию. Была оптимизирована загрузка/выгрузка файлов при помощи чанков. Также было проведено нагрузочное тестирование с использованием JMeter, которое показало, что сервис способен выдерживать высокую нагрузку, сохраняя стабильность и производительность при большом количестве одновременных пользователей и запросов.
+					</li>
+					<li>
+						<p><strong>Эмулятор CLI UNIX-подобной ОС</strong></p>
+						<p><strong>Стек:</strong> Java, Stream API, JUnit, Mockito</p>
+						Эмулятор принимает образ виртуальной файловой системы в виде zip-файла и работает в режиме CLI. Поддерживает команды: ls, cd, pwd, cp, cat, uptime, script, exit и другие
+					</li>
+				</ul>
+				
+				<h2 style="border-bottom: 2px solid #000000; padding-bottom: 5px">
+					Образование
+				</h2>
+				<div style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;">
+						<p style="font-size: 18px;"><strong>РТУ МИРЭА</strong></p>
+						<p style="font-size: 16px;">Москва</p>
+				</div>
+				<div style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: row; align-items: flex-end;">
+						<p style="font-size: 18px;"><strong>Программная инженерия</strong></p>
+						<p style="font-size: 16px;">2023-2027</p>
+				</div>
+				<ul style="padding-left: 30px;">
+					<li>Кафедра – ИиППО</li>
+					<li>Профиль – РППиИС</li>
+					<li>Средний балл – 5.0/5.0</li>
+				</ul>
+			</div>
 
-        /* Мелкие улучшения для мобильных устройств */
-        @media (max-width: 768px) {
-            body {
-                margin: 20px;
-            }
-
-            h1 {
-                font-size: 2.5em;
-            }
-
-            .section {
-                padding: 15px;
-            }
-
-            p, li {
-                font-size: 1em;
-            }
-        }
-    </style>
-</head>
-<body>
-<h1>Какряцкий Александр</h1>
-<p><strong>Java разработчик</strong></p>
-
-<div class="section">
-    <p><strong>E-mail:</strong> <a href="mailto:666kakryatskii666@gmail.com">666kakryatskii666@gmail.com</a></p>
-    <p><strong>Telegram:</strong> <a href="https://t.me/frughwer" target="_blank">t.me/frughwer</a></p>
-    <p><strong>Город:</strong> Москва</p>
-</div>
-
-<div class="section">
-    <h2>Обо мне</h2>
-    <p>Я увлекаюсь backend-разработкой на Java</p>
-</div>
-
-<div class="section">
-    <h2>Навыки</h2>
-    <ul>
-        <li>Java Core, Spring Core, Spring MVC, Spring Security, Hibernate</li>
-        <li>Keycloak, OAuth2</li>
-        <li>RabbitMQ, Kafka</li>
-        <li>PostgreSQL, MongoDB</li>
-        <li>Redis</li>
-        <li>Flyway</li>
-        <li>Docker, Docker Compose</li>
-        <li>Git</li>
-        <li>Английский — B2</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Знания</h2>
-    <ul>
-        <li>Структуры данных и алгоритмы: деревья, очереди, стеки, листы, хеши</li>
-        <li>ООП, SOLID и другие прицнипы</li>
-        <li>Stream API, Lombok, Log4j</li>
-        <li>JUnit, Mockito, JMeter</li>
-        <li>Реляционные базы данных: нормализация, индексы, ограничения, транзакции</li>
-        <li>HTTP, HTTPS, REST, SOAP, Grps</li>
-        <li>Паттерны проектирования: DDD, гексагональная архитектура</li>
-        <li>Основы работы в Linux</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Опыт</h2>
-    <p>В настоящее время я разрабатываю бэкенд для проекта Oisac, используя микросервисную архитектуру, с такими технологиями, как Spring, Spring Security, Spring Data, Kafka, PostgreSQL в сочетании с Flyway, MongoDB и Redis</p>
-</div>
-    
-<div class="section">
-    <h2>Проекты</h2>
-    <ul>
-        <li><strong>Телеграм-бот для обмена файлами:</strong> Телеграмм бот, который позволяет отправить фото или файл, и получить сайт, где можно скачать его. Проект построен на микросервисной архитектуре с использованием Spring, Rabbit MQ, Docker, Hibernate, PostgreSQL. Включает в себя сервисы диспатчера, нод, регистрации, хэширования и сохранения файлов в бд. <a href="https://github.com/MaoSada0/SpringProject" target="_blank">Ссылка на проект</a></li>
-        <li><strong>Генератор QR-кодов:</strong> Сайт, который генерерирует Qr коды. Проект построен на микросервисной архитектуре с использованием Spring, Spring security, keycloak, Docker, Hibernate, PostgreSQL. Микросервисы включают в себя oauth2 аутентификацию.<a href="https://github.com/MaoSada0/qr" target="_blank">Ссылка на проект</a></li>
-        <li><strong>Эмулятор UNIX-подобной ОС:</strong> Эмулятор UNIX-подобной операционной системы на Java. Он принимает образ виртуальной файловой системы в виде zip-файла и работает в режиме CLI. Поддерживает команды: ls, cd, pwd, cp, cat, uptime, script, exit. <a href="https://github.com/MaoSada0/Shell-emulator" target="_blank">Ссылка на проект</a></li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Другие достижения</h2>
-    <ul>
-        <li>Средний балл в вузе: 5.0/5.0</li>
-        <li>Есть опыт разработки Android-приложений, разработал: приложение погоды, приложение для управления финансами</li>
-        <li>Создал нейросеть для распознавания цифр без сторонних библиотек</li>
-        <li>Написал игру "Сапёр" без сторонних библиотек на Java</li>
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Образование</h2>
-    <p>РТУ МИРЭА, Направление: Программная инженерия, 2 курс</p>
-</div>
-
-<div class="section">
-    <h2>Ссылки</h2>
-    <ul>
-        <li><a href="https://github.com/MaoSada0" target="_blank">GitHub</a></li>
-        <li><a href="https://leetcode.com/MaoSadao" target="_blank">LeetCode</a></li>
-    </ul>
-</div>
-</body>
+			<!-- Footer -->
+			<div class="footer">
+				<p>© 2024 Какряцкий Александр</p>
+			</div>
+		</div>
+	</body>
 </html>
